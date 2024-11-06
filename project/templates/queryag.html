@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search | Agreement</title>
+    <link rel="icon" type="image/x-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="{{ url_for('static', filename='rocket.png') }}" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                RocketMan
+            </a>
+        </div>
+    </nav>
+    
+    <div class="container my-5">
+
+        {% if agreement_data %}
+            <div class="card my-4">
+                <div class="card-header">Agreement Details</div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Payment ID:</strong> {{ agreement_data.paymentID }}</li>
+                            <li class="list-group-item"><strong>Agreement ID:</strong> {{ agreement_data.agreementID }}</li>
+                            <li class="list-group-item"><strong>Payer Reference:</strong> {{ agreement_data.payerReference }}</li>
+                            <li class="list-group-item"><strong>Customer MSISDN:</strong> {{ agreement_data.customerMsisdn }}</li>
+                            <li class="list-group-item"><strong>Agreement Create Time:</strong> {{ agreement_data.agreementCreateTime }}</li>
+                            <li class="list-group-item"><strong>Agreement Execute Time:</strong> {{ agreement_data.agreementExecuteTime }}</li>
+                            <li class="list-group-item"><strong>Agreement Void Time:</strong> {{ agreement_data.agreementVoidTime }}</li>
+                            <li class="list-group-item"><strong>Agreement Status:</strong> {{ agreement_data.agreementStatus }}</li>
+                            <li class="list-group-item"><strong>Status Code:</strong> {{ agreement_data.statusCode }}</li>
+                            <li class="list-group-item"><strong>Status Message:</strong> {{ agreement_data.statusMessage }}</li>
+                        </ul>
+                    </div>
+            </div>
+        {% endif %}
+        <form action="/queryUnbind" method="post" class="d-inline">
+            <button type="submit" class="btn btn-danger my-3">Back to Agreements</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

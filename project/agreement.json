@@ -1,0 +1,14 @@
+[
+    {
+        "paymentID": "TR0000Nh9VIBV1730877725067",
+        "payerType": "Customer",
+        "agreementID": "TestnewAdmin89H03QE1730877725067",
+        "agreementStatus": "Completed",
+        "agreementExecuteTime": "2024-11-06T13:22:18:126 GMT+0600",
+        "payerReference": "01619777283",
+        "customerMsisdn": "01619777282",
+        "payerAccount": "01619777282",
+        "statusCode": "0000",
+        "statusMessage": "Successful"
+    }
+]

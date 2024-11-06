@@ -1,0 +1,51 @@
+[
+    {
+        "paymentID": "TR0000ONY09vj1730874932520",
+        "payerType": "Customer",
+        "agreementID": "TestnewAdminZ7YUSRD1730874932520",
+        "agreementStatus": "Completed",
+        "agreementExecuteTime": "2024-11-06T12:35:50:063 GMT+0600",
+        "payerReference": "01619777283",
+        "customerMsisdn": "01619777282",
+        "payerAccount": "01619777282",
+        "statusCode": "0000",
+        "statusMessage": "Successful",
+        "product": null
+    },
+    {
+        "paymentID": "TR00019dIq6NP1730877695879",
+        "trxID": "BK630KUPQR",
+        "transactionStatus": "Completed",
+        "amount": "10",
+        "currency": "BDT",
+        "intent": "sale",
+        "paymentExecuteTime": "2024-11-06T13:21:49:034 GMT+0600",
+        "merchantInvoiceNumber": "Inv0124",
+        "payerType": "Customer",
+        "agreementID": "TestnewAdminQ0G86V01730877677822",
+        "payerReference": "01619777283",
+        "customerMsisdn": "01619777282",
+        "payerAccount": "01619777282",
+        "statusCode": "0000",
+        "statusMessage": "Successful",
+        "product": "soyuz"
+    },
+    {
+        "paymentID": "TR0001A9HbEhk1730877743985",
+        "trxID": "BK670KUPEX",
+        "transactionStatus": "Completed",
+        "amount": "20",
+        "currency": "BDT",
+        "intent": "sale",
+        "paymentExecuteTime": "2024-11-06T13:22:40:704 GMT+0600",
+        "merchantInvoiceNumber": "Inv0124",
+        "payerType": "Customer",
+        "agreementID": "TestnewAdmin89H03QE1730877725067",
+        "payerReference": "01619777283",
+        "customerMsisdn": "01619777282",
+        "payerAccount": "01619777282",
+        "statusCode": "0000",
+        "statusMessage": "Successful",
+        "product": "viking"
+    }
+]
