@@ -7,25 +7,5 @@ bKash's tokenized checkout provides the customers a more convenient way of payme
 3. Install requirements.txt
 
 # File Tree
-project/
-├── app.py
-├── agreement.py
-├── auth.py
-├── config.py
-├── globals.py
-├── payment.py
-├── utils.py
-├── Static/
-│   ├── r1.jpg
-│   ├── r2.jpg
-│   ├── rocket.png
-│   └── style.css
-└── Templates/
-    ├── index.html
-    ├── bind.html
-    ├── purchases.html
-    ├── query.html
-    ├── queryag.html
-    ├── refund.html
-    └── search.html
+project/ ├── app.py # Main application file where the core logic resides ├── agreement.py # Handles the agreement-related functionalities ├── auth.py # Authentication and user login logic ├── config.py # Configuration file for settings and constants ├── globals.py # Global variables or constants shared across modules ├── payment.py # Payment processing functionality ├── utils.py # Utility functions and helpers ├── Static/ # Directory for static files │ ├── r1.jpg # Image file used in the app │ ├── r2.jpg # Image file used in the app │ ├── rocket.png # Another image file used in the app │ └── style.css # CSS file for styling the front-end └── Templates/ # Directory for HTML templates ├── index.html # Homepage template ├── bind.html # Template for binding user actions ├── purchases.html # Template to display purchases ├── query.html # Template for querying information ├── queryag.html # Template for querying agreements ├── refund.html # Template for processing refunds └── search.html # Template for search functionality
   
