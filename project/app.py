@@ -14,8 +14,8 @@ product = None
 
 @app.route('/')
 def index():
-    # global tokenized_flag
-    # global cancel_ag_flag
+    global tokenized_flag
+    global cancel_ag_flag
     tokenized_flag=get_tokenized_flag()
     cancel_ag_flag=get_cancel_flag()
 
@@ -26,7 +26,7 @@ def index():
 
     if cancel_ag_flag == 1:
         flash("Agreement was cancelled!", "success")
-        # cancel_ag_flag = 0
+        cancel_ag_flag = 0
         set_cancel_flag(0)
         return render_template('index.html')
 
@@ -34,8 +34,9 @@ def index():
         agreement_data = execute_agreement(payment_id)
         if agreement_data:
             save_agreement(agreement_data)
-            # tokenized_flag = 0
+            tokenized_flag = 0
             set_tokenized_flag(0)
+            print(f"The current value after tokenized_0 is {tokenized_flag} ")
             message = agreement_data.get("statusMessage")
             if agreement_data.get("statusCode") == "0000":
                 flash("Agreement was successful!", "success")
@@ -47,7 +48,7 @@ def index():
             # flash("Agreement execution failed. Please try again.", "danger")
             return render_template('index.html')
 
-    if status and payment_id and tokenized_flag == 0:
+    if status and payment_id and tokenized_flag !=1:
         data = execute_payment(payment_id)
         if data:
             save_purchase(data, product)
