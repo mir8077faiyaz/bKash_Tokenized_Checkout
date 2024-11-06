@@ -1,5 +1,5 @@
 # RocketMAN
-Flask based payment gateaway implmeneted using bKash Tokenized Checkout.
+A no-database Flask based payment gateaway implmeneted using bKash Tokenized Checkout.
 
 ## Description:
 bKash's tokenized checkout provides the customers a more convenient way of payment. Using this product, the customers can create an agreement in merchant websites/apps that for further payment using bKash, they will only use bkash wallet PIN. In this case the merchant system needs to store these agreements against different user accounts. This provides a faster and convenient payment opportunity for both the merchant and the customer.
@@ -34,4 +34,14 @@ bKash's tokenized checkout provides the customers a more convenient way of payme
     └── search.html
 ``` </pre>
 
-  
+## Config.py 
+    """Place holder for your values."""
+    USERNAME = "<your_username>"
+    PASSWORD = "<your_password>"
+    APP_KEY = "<your_app_key>"
+    APP_SECRET = "<your_app_secret>"
+    X_APP_KEY = "<your_x_app_key>"
+    FLASK_KEY = "<your_flask_key>"
+    """Path to your json files."""
+    purchase_data_file = "<path_to_purchases_file>"
+    agreement_data_file = "<path_to_agreement_file>"
