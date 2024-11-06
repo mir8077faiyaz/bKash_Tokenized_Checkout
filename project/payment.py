@@ -21,7 +21,8 @@ def create_payment(price, callback_url):
     if id_token:
         agreements=load_agreement()
         for agreement in agreements:
-            if agreement["payerReference"]=="01619777283" or agreement["payerReference"]=="01619777282":
+            # if agreement["payerReference"]=="01619777283" or agreement["payerReference"]=="01619777282":
+            if agreement["payerReference"]:
                 agreement_id=agreement["agreementID"]
         
         if agreement_id:
@@ -34,7 +35,7 @@ def create_payment(price, callback_url):
             }
             create_body = {
                 "mode": "0001",
-                "payerReference": "01619777282",
+                "payerReference": "01619777283",
                 "callbackURL": callback_url,
                 "merchantAssociationInfo": "MI05MID54RF09123456One",
                 "agreementID":agreement_id,
@@ -57,7 +58,7 @@ def create_payment(price, callback_url):
             }
             create_body = {
                 "mode": "0011",
-                "payerReference": "01619777282",
+                "payerReference": "01619777283",
                 "callbackURL": callback_url,
                 "merchantAssociationInfo": "MI05MID54RF09123456One",
                 "amount": price,
