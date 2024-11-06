@@ -10,6 +10,28 @@ bKash's tokenized checkout provides the customers a more convenient way of payme
 3. Install requirements.txt
 
 ## File Tree
-<pre> ``` project/ ├── app.py ├── agreement.py ├── auth.py ├── config.py ├── globals.py ├── payment.py ├── utils.py ├── Static/ │ ├── r1.jpg │ ├── r2.jpg │ ├── rocket.png │ └── style.css └── Templates/ ├── index.html ├── bind.html ├── purchases.html ├── query.html ├── queryag.html ├── refund.html └── search.html ``` </pre>
+<pre> ``` 
+  project/
+├── app.py
+├── agreement.py
+├── auth.py
+├── config.py
+├── globals.py
+├── payment.py
+├── utils.py
+├── Static/
+│   ├── r1.jpg
+│   ├── r2.jpg
+│   ├── rocket.png
+│   └── style.css
+└── Templates/
+    ├── index.html
+    ├── bind.html
+    ├── purchases.html
+    ├── query.html
+    ├── queryag.html
+    ├── refund.html
+    └── search.html
+``` </pre>
 
   
