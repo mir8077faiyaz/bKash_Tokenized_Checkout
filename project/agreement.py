@@ -22,7 +22,7 @@ def create_agreement():
     cr_agreement_body = {
         "mode": "0000",
         "callbackURL": callback_url,
-        "payerReference": "01619777283",
+        "payerReference": "01619777282",
     }
     response = requests.post(cr_agreement_url, json=cr_agreement_body, headers=cr_agreement_headers)
     if response.status_code == 200:
