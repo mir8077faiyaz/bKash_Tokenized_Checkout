@@ -2,12 +2,14 @@
 
 class Config:
     """Store sensitive configuration values."""
-    USERNAME = "01770618567"
-    PASSWORD = "D7DaC<*E*eG"
-    APP_KEY = "0vWQuCRGiUX7EPVjQDr0EUAYtc"
-    APP_SECRET = "jcUNPBgbcqEDedNKdvE4G1cAK7D3hCjmJccNPZZBq96QIxxwAMEx"
-    X_APP_KEY="0vWQuCRGiUX7EPVjQDr0EUAYtc"
-    FLASK_KEY='s1o2m3e4t5h6i7n8g9'
+    USERNAME = "<your_username>"
+    PASSWORD = "<your_password>"
+    APP_KEY = "<your_app_key>"
+    APP_SECRET = "<your_app_secret>"
+    X_APP_KEY = "<your_x_app_key>"
+    FLASK_KEY = "<your_flask_key>"
+    
+    # API URLs
     GRANT_URL = "https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/token/grant"
     REFRESH_URL = "https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/token/refresh"
     CREATE_PAYMENT_URL = "https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/create"
@@ -17,8 +19,9 @@ class Config:
     REFUND_PAYMENT_URL = "https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/payment/refund"
     CREATE_AGREEMENT_URL = "https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/create"
     EXEC_AGREEMENT_URL = "https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/execute"
-    QUERY_AGREEMENT_URL="https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/agreement/status"
+    QUERY_AGREEMENT_URL = "https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/agreement/status"
     CANCEL_AGREEMENT_URL = "https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/agreement/cancel"
-
-    purchase_data_file = 'purchases.json'
-    agreement_data_file= 'agreement.json'
+    
+    # Data file paths
+    purchase_data_file = "<path_to_purchases_file>"
+    agreement_data_file = "<path_to_agreement_file>"
