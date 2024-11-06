@@ -7,7 +7,7 @@ bKash's tokenized checkout provides the customers a more convenient way of payme
 ## Installation:
 1. Create virtual environment.
 2. Clone/Download the project file.
-3. Install requirements.txt
+3. Install requirements.txt <pre> pip install -r /path/to/requirements.txt <pre>
 
 ## File Tree
 <pre> ``` 
