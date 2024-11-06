@@ -34,7 +34,7 @@ def create_payment(price, callback_url):
             }
             create_body = {
                 "mode": "0001",
-                "payerReference": "01619777283",
+                "payerReference": "01619777282",
                 "callbackURL": callback_url,
                 "merchantAssociationInfo": "MI05MID54RF09123456One",
                 "agreementID":agreement_id,
@@ -57,7 +57,7 @@ def create_payment(price, callback_url):
             }
             create_body = {
                 "mode": "0011",
-                "payerReference": "01619777283",
+                "payerReference": "01619777282",
                 "callbackURL": callback_url,
                 "merchantAssociationInfo": "MI05MID54RF09123456One",
                 "amount": price,
