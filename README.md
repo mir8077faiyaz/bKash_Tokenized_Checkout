@@ -36,6 +36,7 @@ bKash's tokenized checkout provides the customers a more convenient way of payme
 
 ## Config.py
 Details of these placeholders are to be requested from bKash P&T devloper's team.
+<pre>
     """Place holder for your values."""
     USERNAME = "<your_username>"
     PASSWORD = "<your_password>"
@@ -46,3 +47,4 @@ Details of these placeholders are to be requested from bKash P&T devloper's team
     """Path to your json files."""
     purchase_data_file = "<path_to_purchases_file>"
     agreement_data_file = "<path_to_agreement_file>"
+</pre>
