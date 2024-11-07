@@ -34,7 +34,8 @@ bKash's tokenized checkout provides the customers a more convenient way of payme
     └── search.html
 ``` </pre>
 
-## Config.py 
+## Config.py
+Details of these placeholders are to be requested from bKash P&T devloper's team.
     """Place holder for your values."""
     USERNAME = "<your_username>"
     PASSWORD = "<your_password>"
