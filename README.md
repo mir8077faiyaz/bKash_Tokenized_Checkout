@@ -35,7 +35,7 @@ bKash's tokenized checkout provides the customers a more convenient way of payme
 ``` </pre>
 
 ## Config.py
-Details of these placeholders are to be requested from bKash P&T devloper's team.
+Details of these placeholders are to be requested from bKash P&T developer's team.
 <pre>
     """Place holder for your values."""
     USERNAME = "<your_username>"
